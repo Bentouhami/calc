@@ -1,4 +1,4 @@
-package com.javafx.calc.mvc;
+package com.javafx.calc.mvc.Controller;
 
 import com.javafx.calc.mvc.Model.Calculate;
 import com.javafx.calc.mvc.Model.OperationsEnum;
@@ -20,7 +20,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 
-public class PrimaryController {
+public class Controller {
 
     private Calculate calc;
     private Pane root;
@@ -50,7 +50,7 @@ public class PrimaryController {
     private Button[] btn_numPad;
     private Button[] btn_functionsButton;
 
-    public PrimaryController() {
+    public Controller() {
 
         initialize();
         btn_generator(btn_numPad);

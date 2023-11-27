@@ -8,18 +8,20 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import com.javafx.calc.mvc.Controller.Controller;
+
 /**
  * JavaFX App
  */
 public class App extends Application {
 
-    private PrimaryController controller;
+    private Controller controller;
     private static Scene scene;
 
     @Override
     public void start(Stage stage) throws IOException {
 
-        controller = new PrimaryController();
+        controller = new Controller();
         stage.setMinWidth(200);
         stage.setMaxWidth(500);
         stage.setMinHeight(300);
